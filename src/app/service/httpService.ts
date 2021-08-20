@@ -12,7 +12,7 @@ export class HttpService {
     SendMessage(message: Message) {
         const body = { messageId: message.messageId, date:message.date, message:message.message };
 
-        this.http.post<Message>('https://localhost:44359/api/Broker/SendBroker', body).subscribe(data => {
+        this.http.post<Message>('https://localhost:7000/api/Broker/SendBroker', body).subscribe(data => {
             console.log('sending');
         });
 
