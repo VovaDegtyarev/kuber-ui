@@ -3,3 +3,7 @@ export interface Message {
     date: string;
     message: string;
 }
+
+export interface StatusServer {
+    status: string;
+}

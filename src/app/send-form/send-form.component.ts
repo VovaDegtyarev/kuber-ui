@@ -29,6 +29,8 @@ export class SendFormComponent implements OnInit {
     this.httpService.SendMessage(this.mess);
   }
 
-
+  checkServerStatus() {
+    this.httpService.GetStatusServer();
+  }
 
 }
